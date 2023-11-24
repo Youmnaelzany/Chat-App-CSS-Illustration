@@ -1,16 +1,112 @@
 ---
-
+import "@/styles/global.css";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="chat-wrapper">
+      <div>
+        <div class="arrow">
+          <img src="/public/images/Path 4.svg" alt="" />
+        </div>
+        <div class="personal-details">
+          <div class="personal-img">
+            <img src="/images/avatar.jpg" alt="" />
+          </div>
+          <div class="personal-info">
+            <h2 class="person-name">Samuel Green</h2>
+            <h3 class="person-statues">Available to Walk</h3>
+          </div>
+        </div>
+        <div class="dots">
+          <img src="/public/images/Combined-Shape.svg" alt="" />
+        </div>
+      </div>
+      <div class="the-chat">
+        <div class="samuel-replay">
+          <p>That sounds great. I’d be happy with that.</p>
+          <p>Could you send over some pictures of your dog, please?</p>
+        </div>
+        <div class="cusomer-replay">
+          <div>
+            <img src="/public/images/dog-image-1.jpg" alt="" />
+            <img src="/public/images/dog-image-2.jpg" alt="" />
+            <img src="/public/images/dog-image-3.jpg" alt="" />
+          </div>
+          <p>Here are a few pictures. She’s a happy girl!</p>
+          <p>Can you make it?</p>
+        </div>
+        <div class="samuel-replay">
+          <p>
+            She looks so happy! The time we discussed works. How long shall I
+            take her out for?
+          </p>
+          <div class="bundel-package">
+            <div class="circle">
+              <img src="/public/images/Oval.svg" alt="" />
+            </div>
+            <p class="bundel text-xs font-normal leading-3 text-white">
+              30 minute walk
+            </p>
+            <p class="price text-sm font-bold leading-3 text-white">$29</p>
+          </div>
+          <div class="bundel-package">
+            <div class="circle">
+              <img src="/public/images/Oval.svg" alt="" />
+            </div>
+            <p class="bundel text-xs font-normal leading-3 text-white">
+              1 hour walk
+            </p>
+            <p class="price text-sm font-bold leading-3 text-white">$49</p>
+          </div>
+        </div>
+      </div>
+      <div class="type-message">
+        <input
+          class="placeholder:text-xs placeholder:font-normal placeholder:text-Grayish-Blue"
+          name="text"
+          id="text"
+          placeholder="Type a message..."
+        />
+        <button type="button">
+          <img src="/public/images/favicon.svg" alt="" />
+        </button>
+      </div>
+    </section>
+    <section class="intro-section">
+      <h1
+        class="main-heading text-4xl text-Very-Dark-Desaturated-Violet font-medium leading-normal"
+      >
+        Simple booking
+      </h1>
+      <p
+        class="main-description text-base leading-7 font-normal text-Dark-Grayish-Violet"
+      >
+        Stay in touch with our dog walkers through the chat interface. This
+        makes it easy to discuss arrangements and make bookings. Once the walk
+        has been completed you can rate your walker and book again all through
+        the chat.
+      </p>
+    </section>
+    <div class="attribution">
+      Challenge by <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank">Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>

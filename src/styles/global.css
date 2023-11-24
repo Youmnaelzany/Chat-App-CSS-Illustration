@@ -1,0 +1,47 @@
+/* The integration's default injected base.css file */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+*,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+}
